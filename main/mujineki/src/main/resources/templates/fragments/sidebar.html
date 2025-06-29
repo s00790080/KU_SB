@@ -1,0 +1,35 @@
+
+
+<!-- /templates/fragments/sidebar.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+  <aside th:fragment="sidebar">
+    <div style="background-color: #f9f9f9; padding: 1rem; width: 200px;">
+      <h3>メニュー</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li><a href="/search">🔍 駅検索</a></li>
+        <li><a href="/favorites">⭐ お気に入り</a></li>
+        <li><a href="/">🏠 トップへ</a></li>
+      </ul>
+      <hr>
+      <h4>簡易検索</h4>
+      <form th:action="@{/results}" method="get">
+        <label for="pref">都道府県:</label><br>
+        <select name="pref" id="pref">
+          <option value="">選択</option>
+          <option value="青森県">青森県</option>
+          <option value="岩手県">岩手県</option>
+          <!-- 他県を追加 -->
+        </select><br><br>
+
+        <label for="line">路線名:</label><br>
+        <input type="text" id="line" name="line"><br><br>
+
+        <input type="submit" value="検索">
+      </form>
+    </div>
+  </aside>
+</body>
+</html>
