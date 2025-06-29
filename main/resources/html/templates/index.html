@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>駅寝っと | 無人駅検索アプリ</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- ヘッダー -->
+<div th:replace="fragments/header :: header"></div>
+
+<div class="container">
+
+  <!-- サイドバー -->
+  <div th:replace="fragments/sidebar :: sidebar"></div>
+
+  <!-- メイン -->
+  <main class="main-content">
+    <div class="hero-image">なんか一枚絵</div>
+    <p>日本中の無人駅を、探しに行こう。</p>
+  </main>
+
+</div>
+
+<!-- フッター -->
+<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>
