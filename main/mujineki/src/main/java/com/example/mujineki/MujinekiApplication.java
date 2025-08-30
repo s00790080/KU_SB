@@ -1,4 +1,4 @@
-package mujineki.src.main.java.com.example.mujineki;
+package com.example.mujineki;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
