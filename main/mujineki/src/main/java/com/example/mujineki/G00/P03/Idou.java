@@ -1,4 +1,6 @@
-package java.example.mujineki.G-00.03;
+
+
+package com.example.mujineki.G00.P03;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
